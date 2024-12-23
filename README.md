@@ -16,7 +16,7 @@ With this system, users can accumulate coins by engaging with the following meth
 
 - **Google AdSense Support:** The system seamlessly integrates with Google AdSense, allowing users to earn coins through ad impressions and clicks. This monetization method provides users with a straightforward way to accumulate coins while navigating your control panel.
   
-- **Click Coin:** Its has also a feature that people can earn coins by clicking and they will be shown a ad from which they can earn
+- **Click Coin:** It has also a feature that people can earn coins by clicking and they will be shown an ad from which they can earn
 
 ## Requirements
 
