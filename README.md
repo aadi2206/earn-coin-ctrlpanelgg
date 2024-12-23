@@ -35,3 +35,9 @@ To get started with the CtrlPanel.GG Coin Earning System, you'll need:
 For detailed installation instructions, please refer to the [Installation Guide](install.md).
 
 Feel free to contribute, report issues, or suggest improvements!
+
+## Credits
+
+This project is developed and maintained by AronikTV, LogischJoJo, igot2phones, Lishan778 and Ismam Ilahi, Aadi2206
+
+Feel free to contribute, report issues, or suggest improvements!
