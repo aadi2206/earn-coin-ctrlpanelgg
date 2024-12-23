@@ -20,70 +20,92 @@ Before deploying the CtrlPanel.GG Earn Coin System to your production server, it
 
 1. Open up the EarnController.php which can be found in /var/www/ctrlpanel/app/Http/Controllers.
 
-2. Use This for Direct Access: ```nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php```
+2. Use This for Direct Access:
+```shell
+nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php
 
-3. Change `$dailyLimit` to the amount of daily how many links are generated per user.
+```
 
-4. Change `$timezone` to your timezone, you can find your timezone at https://en.wikipedia.org/wiki/Time_zone
+4. Change `$dailyLimit` to the amount of daily how many links are generated per user.
 
-5. Replace `Your_CtrlPanel_Domain` with the Domain of your CtrlPanel. !!!Do NOT ADD A / !!!
+5. Change `$timezone` to your timezone, you can find your timezone at https://en.wikipedia.org/wiki/Time_zone
 
-6. Replace `https://link-to.net/` with your Direct Ad Link, Generate it First.
+6. Replace `Your_CtrlPanel_Domain` with the Domain of your CtrlPanel. !!!Do NOT ADD A / !!!
 
-7. Replace `Your_Publisher_ID` with your Linkvertise Publisher ID which you can find in the Full Script API Section. (Numerical Code in the HTML Code)
+7. Replace `https://link-to.net/` with your Direct Ad Link, Generate it First.
 
-8. Change the Variable `$reward` to the Number of Coins you want to give a user for an ads session. The default is 30. `($reward = 30;)`
+8. Replace `Your_Publisher_ID` with your Linkvertise Publisher ID which you can find in the Full Script API Section. (Numerical Code in the HTML Code)
 
-9. Save the File.
+9. Change the Variable `$reward` to the Number of Coins you want to give a user for an ads session. The default is 30. `($reward = 30;)`
+
+10. Save the File.
 
 ## Step 3: Configuring The File For Google Adsense
 
 1. Open up the EarnController.php which can be found in /var/www/ctrlpanel/app/Http/Controllers.
 
-2. Use This for Direct Access: ```nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php```
+2. Use This for Direct Access:
+```shell
+nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php
 
-3. Change the Variable `$reward_a` to the Number of Coins you want to give a user for an ads session. The default is 5. `($reward_a = 5;)`
+```
 
-4. Save the File.
+4. Change the Variable `$reward_a` to the Number of Coins you want to give a user for an ads session. The default is 5. `($reward_a = 5;)`
 
-5. **Note: Create a Folder Named as Earn or paste this code: ```mkdir /var/www/ctrlpanel/resources/views/earn/```
+5. Save the File.
 
-6. Open up the adpage.blade.php which can be found in /var/www/ctrlpanel/resources/views/earn/.
+6. **Note: Create a Folder Named Earn or paste this code:
+```shell
+mkdir /var/www/ctrlpanel/resources/views/earn/
+```
 
-7. Use This for Direct Access: ```nano /var/www/ctrlpanel/resources/views/earn/adpage.blade.php```
+8. Open up the adpage.blade.php which can be found in /var/www/ctrlpanel/resources/views/earn/.
 
-8. Replace every placeholder “xxxxxxx” with the variables you get from Adsense
+9. Use This for Direct Access:
+```shell
+nano /var/www/ctrlpanel/resources/views/earn/adpage.blade.php
+```
 
-9. Save the File.
+10. Replace every placeholder “xxxxxxx” with the variables you get from Adsense
+
+11. Save the File.
 
 ## Step 4: Configuring The File For ClickCoins
 
 1. Open up the EarnController.php which can be found in /app/Http/Controllers.
 
-2. Use This for Direct Access: ```nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php```
+2. Use This for Direct Access:
+```shell
+nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php
 
-3. Change the Variable `$clickcoinReward` to the Number of Coins you want to give a user for a click. The default is 1. `$clickcoinReward = 1`
+```
 
-4. Change the Variable `$minTimeBetweenClicks` to the Amount you want the second to wait after each Click. The default is 60. `$minTimeBetweenClicks = 60`
+4. Change the Variable `$clickcoinReward` to the Number of Coins you want to give a user for a click. The default is 1. `$clickcoinReward = 1`
 
-5. Replace $clickcoinLink = 'your direct ad link'; with your ads direct link.
+5. Change the Variable `$minTimeBetweenClicks` to the Amount you want the second to wait after each Click. The default is 60. `$minTimeBetweenClicks = 60`
 
-6. Save the File.
+6. Replace $clickcoinLink = 'your direct ad link'; with your ads direct link.
+
+7. Save the File.
 
 ## Step 5: Add the Routings and the Navigation and do the last steps.
 
 1. Open up the web.php file which can be found in /var/www/ctrlpanel/routes/. (This is in your CtrlPanel Installation)
 
-2. Use This for Direct Access: ```nano /var/www/ctrlpanel/routes/web.php```
+2. Use This for Direct Access:
+```shell
+nano /var/www/ctrlpanel/routes/web.php
 
-3. Add this code to the Top of the Web.php:
+```
+
+4. Add this code to the Top of the Web.php:
 
    ```shell
    use App\Http\Controllers\EarnController;
 
    ```
 
-4. Add this code under the Line
+5. Add this code under the Line
 ```shellRoute::post('/voucher/redeem', [VoucherController::class, 'redeem'])->middleware('throttle:5,1')->name('voucher.redeem');```
 
    ```shell
@@ -99,12 +121,12 @@ Before deploying the CtrlPanel.GG Earn Coin System to your production server, it
 
    ```
 
-5. Save the File.
+6. Save the File.
 
-6. Now Upload this all Files to ```/var/www/ctrlpanel```. (Only if you've done the changes of code in localhost not directly in Server's Folder)
+7. Now Upload this all Files to ```/var/www/ctrlpanel```. (Only if you've done the changes of code in localhost not directly in Server's Folder)
 
-7. Run these command's in the ctrlpanel directory.
-   ```
+8. Run these command's in the ctrlpanel directory.
+   ```shell
    cd /var/www/ctrlpanel && php artisan view:clear && php artisan config:clear && chown -R www-data:www-data /var/www/ctrlpanel/*
    ```
 
