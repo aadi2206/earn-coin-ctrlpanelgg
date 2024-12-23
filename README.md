@@ -1,4 +1,4 @@
-# CtrlPanel.GG Coin Earning System
+# CtrlPanel.GG Earn Coin System
 
 Disclaimer: This Repository is Not Officially Associated with CtrlPanel
 
@@ -15,12 +15,14 @@ With this system, users can accumulate coins by engaging with the following meth
 - **Linkvertise Integration:** Users can earn coins by interacting with Linkvertise advertisements. Each interaction rewards them with a certain number of coins, which they can later redeem or use within your control panel.
 
 - **Google AdSense Support:** The system seamlessly integrates with Google AdSense, allowing users to earn coins through ad impressions and clicks. This monetization method provides users with a straightforward way to accumulate coins while navigating your control panel.
+  
+- **Click Coin:** Its has also a feature that people can earn coins by clicking and they will be shown a ad from which they can earn
 
 ## Requirements
 
 To get started with the CtrlPanel.GG Coin Earning System, you'll need:
 
-- **CtrlPanel.GG Installation:** Ensure that you have CtrlPanel.GG installed on your server.
+- **CtrlPanel.GG Installation:** Ensure that you have CtrlPanel.GG is installed on your server.
 
 - **Google AdSense Verified Account:** You'll need a verified Google AdSense account to enable the AdSense integration.
 
@@ -28,14 +30,8 @@ To get started with the CtrlPanel.GG Coin Earning System, you'll need:
 
 - **Basic Knowledge in PHP:** Familiarity with PHP is essential for customizing and configuring the system.
 
-- **A Brain to Think:** 🤓
-
 ## Installation
 
 For detailed installation instructions, please refer to the [Installation Guide](install.md).
-
-## Credits
-
-This project is developed and maintained by AronikTV, LogischJoJo, igot2phones, Lishan778 and Ismam Ilahi
 
 Feel free to contribute, report issues, or suggest improvements!
