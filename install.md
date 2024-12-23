@@ -4,17 +4,11 @@ Before deploying the CtrlPanel.GG Earn Coin System to your production server, it
 
 ## Step 1: Clone the Repository
 
-1. Open your terminal or command prompt.
+1. Download this Code.
 
-2. Navigate to the directory where you want to store the system files on your server using the `cd` command.
-   [Recommended: First Download it on your Computer, Edit and then upload **OR** Do by copy-pasting in the commands given in the installation guide]
+2. Extract the File and Start Editing the Code & then Upload.
    
-4. Clone the repository by running the following command:
-
-   ```shell
-   git clone https://github.com/aadi2206/earn-coin-ctrlpanelgg.git
-
-   ```
+   [**Recommended:** Do by copy-pasting in the commands given in the installation guide]
 
 ## Step 2: Configuring The File For Linkvertise
 
