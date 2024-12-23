@@ -7,7 +7,7 @@ Before deploying the CtrlPanel.GG Earn Coin System to your production server, it
 1. Open your terminal or command prompt.
 
 2. Navigate to the directory where you want to store the system files on your server using the `cd` command.
-   [Recommended: First Download it on your Computer, Edit and then upload or change the code by copy-pasting the whole code]
+   [Recommended: First Download it on your Computer, Edit and then upload **OR** Do by copy-pasting in the commands given in the installation guide]
    
 4. Clone the repository by running the following command:
 
@@ -54,7 +54,7 @@ nano /var/www/ctrlpanel/app/Http/Controllers/EarnController.php
 
 5. Save the File.
 
-6. **Note: Create a Folder Named Earn or paste this code:
+6. **Note:** Create a Folder Named Earn or paste this code:
 ```shell
 mkdir /var/www/ctrlpanel/resources/views/earn/
 ```
