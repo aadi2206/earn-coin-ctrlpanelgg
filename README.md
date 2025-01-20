@@ -38,6 +38,6 @@ Feel free to contribute, report issues, or suggest improvements!
 
 ## Credits
 
-This project is developed and maintained by Aadi2206
+This project is developed and maintained by Aadi2206, AronikTV, LogischJoJo, igot2phones, Lishan778 and Ismam Ilahi
 
 Feel free to contribute, report issues, or suggest improvements!
